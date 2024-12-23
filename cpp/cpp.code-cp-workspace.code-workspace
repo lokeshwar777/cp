@@ -1,0 +1,57 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"launch": {
+			"configurations": [
+				{
+					"name": "Run C++ with Input/Output Redirection",
+					"type": "cppdbg",
+					"request": "launch",
+					"program": "${fileDirname}/${fileBasenameNoExtension}",
+					"args": [
+						"<",
+						"input_file.in",
+						">",
+						"output_file.out"
+					],
+					"cwd": "${fileDirname}",
+					"externalConsole": true,
+					"stopAtEntry": false,
+					"MIMode": "lldb"
+				},
+				{
+					"name": "C/C++: clang++ build and debug active file",
+					"type": "cppdbg",
+					"request": "launch",
+					"program": "${fileDirname}/${fileBasenameNoExtension}",
+					"args": [],
+					"stopAtEntry": false,
+					"cwd": "${fileDirname}",
+					"environment": [],
+					"externalConsole": false,
+					"MIMode": "lldb",
+					"preLaunchTask": "C/C++: clang build active file"
+				},
+				{
+					"name": "C/C++: g++ build and debug active file",
+					"type": "cppdbg",
+					"request": "launch",
+					"program": "${fileDirname}/${fileBasenameNoExtension}",
+					"args": [],
+					"stopAtEntry": false,
+					"cwd": "${fileDirname}",
+					"environment": [],
+					"externalConsole": false,
+					"MIMode": "lldb",
+					"preLaunchTask": null
+				}
+			],
+			"compounds": [],
+			"version": "0.2.0"
+		}
+	}
+}

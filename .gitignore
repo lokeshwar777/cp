@@ -5,6 +5,9 @@
 # I/O files
 input.txt
 output.txt
+input_file.in
+output_file.out
+
 
 # Ignore object files
 *.o

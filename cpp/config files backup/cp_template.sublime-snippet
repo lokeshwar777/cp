@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+/* 777 */
+#include <bits/stdc++.h>
+using namespace std;
+
+#define FAST_IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+const int INF = 1e9;
+const long long INF_LL = 1e18;
+const int MOD = 1e9 + 7;
+const double PI = 3.14159265358979323846;
+
+#define pb push_back
+#define eb emplace_back
+#define fi first
+#define se second
+#define all(x) (x).begin(),(x).end()
+#define sz(x) (int)(x).size()
+
+#define debug(x) cerr << #x << " = " << x << endl;
+
+void solve() {
+    
+}
+
+int main() {
+    FAST_IO
+    // freopen("input_file.in", "r", stdin); 
+    // freopen("output_file.out", "w", stdout);
+
+    int testcases = 1;
+    // cin >> testcases;
+    while (testcases--) {
+        solve();
+    }
+
+    return 0;
+}
+]]></content>
+	<tabTrigger>template</tabTrigger>
+</snippet>

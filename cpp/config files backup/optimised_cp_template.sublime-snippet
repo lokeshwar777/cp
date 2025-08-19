@@ -1,0 +1,153 @@
+
+<snippet>
+	<content><![CDATA[
+/* 777 */
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <cassert>
+#include <climits>
+#include <map>
+#include <set>
+#include <tuple>
+#include <string>
+
+using namespace std;
+
+#define FAST_IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define endl '\n'
+// #define int long long 
+#define pb push_back
+#define eb emplace_back
+#define popb pop_back
+#define fi first
+#define se second
+#define all(x) (x).begin(), (x).end()
+#define sz(x) (int)(x).size()
+
+
+#define REP(i, n) for (int i = 0; i < (n); i++)
+#define FOR(i, a, b) for (int i = (a); i <= (b); i++) 
+#define RREP(i, n) for (int i = (n) - 1; i >= 0; i--) 
+#define RANGE(i, a, b) for (int i = (a); i < (b); i++)
+
+
+using vi = vector<int>;
+using vvi = vector<vi>;
+using pii = pair<int,int>;
+using vpii = vector<pii>;
+using mii = map<int,int>;
+#define mp make_pair
+
+#define INF INT_MAX 
+#define INF_LL LLONG_MAX
+#define MOD 1000000007 
+#define PI 3.14159265358979323846 
+#define EPS 1e-9 // epsilon for floating-point comparisons
+#define MAXN 100005
+
+#define gcd(a, b) __gcd(a, b)
+#define lcm(a, b) (a * b / gcd(a, b))
+#define pow2(x) (1LL << (x))
+#define isPow2(x) ((x) && ((x) & ((x) - 1)) == 0)
+#define COUNTBITS(x) __builtin_popcount(x)
+
+#define SETBIT(x, i) ((x) | (1 << (i))) // Set the ith bit to 1
+#define CLRBIT(x, i) ((x) & ~(1 << (i))) // Clear the ith bit (set to 0)
+#define TOGGLEBIT(x, i) ((x) ^ (1 << (i))) // Toggle the ith bit
+#define CHECKBIT(x, i) ((x) & (1 << (i))) // Check if the ith bit is 1
+
+#define sortf(x) sort(all(x))
+#define sortr(x) sort(all(x), greater<int>())
+#define uniquev(x) x.erase(unique(all(x)), x.end()) // remove duplicates from vector
+
+#define pb push_back
+#define eb emplace_back
+#define popb pop_back
+#define fi first
+#define se second
+#define all(x) (x).begin(), (x).end()
+#define sz(x) (int)(x).size()
+
+#define read(a) for (auto& x : a) cin >> x // for reading arrays/vectors
+#define print(a) for (auto& x : a) cout << x << " " // for printing arrays/vectors
+
+using ll = long long;
+using vi = vector<int>;
+using vvi = vector<vi>;
+using pii = pair<int,int>;
+using vpii = vector<pii>;
+using mii = map<int,int>;
+using msi = map<string, int>;
+using vsi = vector<string>;
+
+#define maxheap priority_queue<int>
+#define minheap priority_queue<int, vector<int>, greater<int>>
+
+// Useful Macros for Swap
+#define swap(x, y) { (x) ^= (y); (y) ^= (x); (x) ^= (y); } // XOR swap
+#define swap_vals(a, b) swap(a, b) // Swap function
+
+// Debugging Macros
+#define debug(x) cerr << #x << " = " << x << endl; // For debugging a variable
+#define debug_vec(v) cerr << #v << " = "; for(auto& el : v) cerr << el << " "; cerr << endl; // Debug a vector
+
+// Debugging tools
+#define debug(x) cerr << #x << " = " << x << endl;
+#define debugv(v) cerr << #v << " = ["; for (auto &i : v) cerr << i << " "; cerr << "]\n";
+#define debug2d(v) cerr << #v << " = [\n"; for (auto &i : v) { for (auto &j : i) cerr << j << " "; cerr << endl; } cerr << "]\n";
+
+// Fast I/O function for larger inputs
+inline int read_int() {
+    int x = 0;
+    char c;
+    while (c = getchar(), c < '0' || c > '9');
+    do {
+        x = x * 10 + (c - '0');
+    } while (c = getchar(), c >= '0' && c <= '9');
+    return x;
+}
+
+inline long long read_long_long() {
+    long long x = 0;
+    char c;
+    while (c = getchar(), c < '0' || c > '9');
+    do {
+        x = x * 10 + (c - '0');
+    } while (c = getchar(), c >= '0' && c <= '9');
+    return x;
+}
+
+
+
+void solve() {
+    // maxheap pq_max;
+    // minheap pq_min;
+
+    int n = read_int();
+    vi arr(n);
+    
+    for (int i = 0; i < n; ++i) {
+        arr[i] = read_int();
+    }
+    debugv(arr);
+   
+}
+
+signed main() {
+    FAST_IO
+    // freopen("input_file.in", "r", stdin); 
+    // freopen("output_file.out", "w", stdout);
+
+    int testcases = 1;
+    // cin >> testcases;
+    while (testcases--) {
+        solve();
+    }
+
+    return 0;
+}
+]]></content>
+	<tabTrigger>optimised_template</tabTrigger>
+</snippet>

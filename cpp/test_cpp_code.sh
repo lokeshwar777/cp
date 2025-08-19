@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ -std=c++20 cses.cpp -o code_file
+g++-14 -std=c++20 cses.cpp -o code_file
 
 # $? - stores the status of last executed command, -ne is not equal
 if [ $? -ne 0 ]; then 

@@ -6,7 +6,7 @@ bool lca_bin_tree(TreeNode*node,TreeNode*target,vector<TreeNode*>&path){
     if(node==NULL)return 0;
     path.push_back(node);
     if(node==target)return 1;
-    bool left=lca(node->left,target,path),right=lca(node->right,target,path);
+    bool left=lca_bin_tree(node->left,target,path),right=lca_bin_tree(node->right,target,path);
     bool res=left||right;
     if(!res)path.pop_back();
     return res;
@@ -14,8 +14,8 @@ bool lca_bin_tree(TreeNode*node,TreeNode*target,vector<TreeNode*>&path){
 
 TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
     vector<TreeNode*>path,ppath,qpath;
-    lca(root,p,ppath);
-    lca(root,q,qpath);
+    lca_bin_tree(root,p,ppath);
+    lca_bin_tree(root,q,qpath);
     TreeNode* res;
     for(int i=0;i<ppath.size()&&i<qpath.size()&&ppath[i]==qpath[i];++i)res=ppath[i];
     return res;
